@@ -1,97 +1,186 @@
 /* CSS RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-  }
-
-body {
-    font-family: 'Open Sans';
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-  @media screen and (min-width:768px) {
-    /* Top Section */
-    .top {
-        background-color: hsl(193, 100%, 96%);
-        background-image: url(/images/bg-hero-desktop.svg);
-        background-repeat: no-repeat;
-        /* background-attachment: fixed; */
-        background-size: cover;
-    }
+body {
+  font-family: "Open Sans";
+  font-size: 18px;
+}
 
-    .top-pad {
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .top-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .top-header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-
-    .top-main {
-        display: flex;
-        align-items: center;
-        gap: 4%;
-        /* justify-content: space-evenly; */
-    }
-
-    .top-main-left {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 47%;
-    }
-
-    .top-main-left h1 {
-        font-size: 55px;
-        font-weight: 700;
-        margin-bottom: 35px;
-    }
-
-    .top-main-left p {
-        line-height: 35px;
-        margin-bottom: 25px;
-    }
-
-    .btn-try-free {
-        color: rgb(0, 0, 0);
-        background-color: hsl(0, 0%, 100%);
-        text-align: center;
-        font-weight: 700;
-        width: 250px;
-        /* max-width: 280px; */
-        padding: 17px;
-        border-radius: 3em;
-        box-shadow: -1px 4px 5px rgb(214, 213, 213);
-    }
-
-   .btn-get-started {
-        color: white;
-        background-color: hsl(322, 100%, 66%);
-        text-align: center;
-        max-width: 300px;
-        padding: 20px;
-        border-radius: 3em;
-    }
-
-    .top-main-right {
-        flex-basis: 53%;
-    }
-
-    .top-main-right img {
-        /* min-width: 400px; */
-        max-width:100%
-    }
-
+@media screen and (min-width: 768px) {
+  /* Top Section */
+  .top {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
   }
+
+  .top-pad {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .top-main {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    /* justify-content: space-evenly; */
+  }
+
+  .top-main-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+  }
+
+  .top-main-left h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+
+  .top-main-left p {
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  .btn-try-free {
+    color: rgb(0, 0, 0);
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-weight: 700;
+    width: 250px;
+    /* max-width: 280px; */
+    padding: 17px;
+    border-radius: 3em;
+    box-shadow: -1px 4px 5px rgb(214, 213, 213);
+  }
+
+  .btn-get-started {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    text-align: center;
+    font-weight: 600;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 3em;
+  }
+
+  .top-main-right {
+    flex-basis: 53%;
+  }
+
+  .top-main-right img {
+    max-width: 100%;
+  }
+
+  .mid {
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  .mid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mid-container > * {
+    display: flex;
+    box-shadow: -1px 4px 5px rgb(214, 213, 213);
+    margin-bottom: 54px;
+    border-radius: 30px;
+  }
+
+  .mid h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .mid p {
+    color: gray;
+    line-height: 28px;
+  }
+
+  .card-a,
+  .card-b,
+  .card-c {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-a-left,
+  .card-c-left {
+    flex-basis: 55%;
+    padding-left: 130px;
+    padding-right: 50px;
+  }
+
+  .card-a-right,
+  .card-c-right {
+    flex-basis: 45%;
+    padding: 30px;
+  }
+
+  .card-a-right img,
+  .card-c-right img {
+    min-width: 300px;
+    max-width: 100%;
+  }
+
+  .card-b-right {
+    flex-basis: 55%;
+    padding-left: 130px;
+    padding-right: 50px;
+  }
+
+  .card-b-left {
+    flex-basis: 45%;
+    padding: 30px;
+  }
+
+  .card-b-left img {
+    min-width: 300px;
+    max-width: 100%;
+  }
+
+  .card-d {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 4px 5px rgb(214, 213, 213);
+    border-radius: 20px;
+  }
+
+  .card-d h2 {
+    margin-bottom: 40px;
+  }
+
+  .card-d a {
+    margin-bottom: 60px;
+    width: 400px;
+    font-weight: 600;
+  }
+}
