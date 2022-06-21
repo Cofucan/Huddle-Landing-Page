@@ -183,4 +183,13 @@ body {
     width: 400px;
     font-weight: 600;
   }
+
+  footer {
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+  }
+
+  .footer-pad {
+    
+  }
 }
