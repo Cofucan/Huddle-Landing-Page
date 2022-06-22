@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 /* CSS RESET */
 * {
   margin: 0;
@@ -8,7 +10,7 @@
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -190,6 +192,68 @@ body {
   }
 
   .footer-pad {
-    
+    padding-left: 130px;
+    padding-right: 40px;
+    padding-top: 220px;
+    padding-bottom: 120px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 3.5fr 2fr 2fr 2.5fr;
+  }
+
+  .contact-detils {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    /* grid-template-rows: 2fr 3fr 1fr 1fr; */
+    grid-template-areas:
+      'a a'
+      'b e'
+      'c f'
+      'd g';
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .career {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #a {
+    background-color: #eb5020;
+    grid-area: a;
+  }
+
+  #b {
+    background-color: #ffa401;
+    grid-area: b;
+  }
+
+  #c {
+    background-color: #05aa42;
+    grid-area: c;
+  }
+
+  #d {
+    background-color: #89df43;
+    grid-area: d;
+  }
+
+  #e {
+    background-color: #01aefd;
+    grid-area: e;
+  }
+  #f {
+    background-color: #623cec;
+    grid-area: f;
+  }
+  #g {
+    background-color: #ec3c3c;
+    grid-area: g;
   }
 }
