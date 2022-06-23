@@ -39,6 +39,7 @@ body {
 
 .top-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -153,7 +154,7 @@ body {
 
 .card-a-right img,
 .card-c-right img {
-  min-width: 300px;
+  min-width: 220px;
   max-width: 100%;
 }
 
@@ -171,7 +172,7 @@ body {
 }
 
 .card-b-left img {
-  min-width: 300px;
+  min-width: 220px;
   max-width: 100%;
 }
 
@@ -188,7 +189,7 @@ body {
   width: 70%;
   position: relative;
   z-index: 1;
-  top: 210px;
+  top: 200px;
 }
 
 .card-d h2 {
@@ -241,7 +242,7 @@ footer {
 .logo-white {
   color: white;
   filter: grayscale(100%) invert(100%);
-  width: 300px;
+  width: 20%;
 }
 
 #a {
@@ -302,9 +303,13 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-  /* .top-header {
-        flex-direction: column;
-    } */
+  .top-pad {
+    padding-top: 30px;
+  }
+
+  .top-header {
+    align-items: center;
+  }
 
   .top-main {
     flex-direction: column;
@@ -322,12 +327,13 @@ footer {
   }
 
   .top-logo img {
-    width: 150px;
+    width: 120px;
   }
 
   .btn-try-free {
     flex-basis: 37%;
     padding: 10px;
+    font-size: 14px;
   }
 
   .btn-get-started {
@@ -337,11 +343,22 @@ footer {
 
   .mid {
     padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .mid-container {
     margin: auto;
-    width: 90%;
+    width: 100%;
+  }
+
+  .mid h1 {
+    font-size: 22px;
+  }
+
+  .mid p {
+    font-size: 15px;
   }
 
   .card-b {
@@ -373,6 +390,19 @@ footer {
 
   .card-d {
     width: 100%;
+    text-align: center;
+    top: 100px;
+  }
+
+  .card-d h2 {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+
+  .card-d a {
+    font-size: 12px;
+    width: 60%;
+    margin-bottom: 40px;
   }
 
   .footer-pad {
@@ -382,7 +412,14 @@ footer {
 
   .footer-container {
     grid-template-columns: 1fr;
-    row-gap: 50px;
+  }
+
+  .logo-white {
+    width: 50%;
+  }
+
+  .contact {
+    margin-bottom: 100px;
   }
 
   .sm-copyright {
@@ -390,6 +427,7 @@ footer {
   }
 
   .sm-icons {
+    margin-top: 50px;
     margin-bottom: 20px;
   }
 }
